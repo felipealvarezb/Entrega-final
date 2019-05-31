@@ -51,26 +51,28 @@ public class Main{
                 switch(inp){
                     case "1":
                     System.out.println("La precipitación mayor es: "+ est.mayorPrcp(mdd.al));
-                    
+                    break;
                     case "2":
                     System.out.println("El promedio de precipitación es: "+est.promedioPrcp(mdd.al));
-                    
+                    break;
                     case "3":
                     double numero = input.nextDouble();
                     System.out.println("Estos son las precipitaciones mayores");
                     fil.mayorQuePrcp(mdd.al, numero);
-                    
+                    break;
                     case "4":
                     numero = input.nextDouble();
                     System.out.println("Estos son las precipitaciones menores");
                     fil.menorQuePrcp(mdd.al, numero);
-                    
+                    break;
                     case "5":
                     numero = input.nextDouble();
                     System.out.println("Estos son las precipitaciones iguales");
                     fil.igualPrcp(mdd.al, numero);
+                        break;
                 }
-              
+                    break;
+                    
               case "2":
               System.out.println("Ha escogido la temperatura promedio, ahora indique que operación desea realizar en temperatura promedio");
               System.out.println("1. Temperatura promedio mayor");
@@ -82,22 +84,28 @@ public class Main{
                 switch(inp){
                     case "1":
                     System.out.println("La temperatura promedio mayor es: "+ est.mayorTavg(mdd.al));
+                        break;
                     case "2":
                     System.out.println("El promedio de temperatura promedio es: "+est.promedioTavg(mdd.al));
+                        break;
                     case "3":
                     double numero = input.nextDouble();
                     System.out.println("Estos son las temperaturas promedio mayores");
                     fil.mayorQueTavg(mdd.al, numero);
+                        break;
                     case "4":
                     numero = input.nextDouble();
                     System.out.println("Estos son las temperaturas promedio menores");
                     fil.menorQueTavg(mdd.al, numero);
+                        break;
                     case "5":
                     numero = input.nextDouble();
                     System.out.println("Estos son las temperaturas promedio iguales");
                     fil.igualTavg(mdd.al, numero);
+                        break;
                 }
-                
+                    break;
+
               case "3":
               System.out.println("Ha escogido la temperatura máxima, ahora indique que operación desea realizar en temperatura máxima");
               System.out.println("1. temperatura máxima mayor");
@@ -109,22 +117,29 @@ public class Main{
               switch(inp){
                     case "1":
                     System.out.println("La temperatura máxima mayor es: "+ est.mayorTmax(mdd.al));
+                      break;
                     case "2":
                     System.out.println("El promedio de temperatura máxima es: "+est.promedioTmax(mdd.al));
+                      break;
                     case "3":
                     double numero = input.nextDouble();
                     System.out.println("Estos son las temperaturas máxima mayores");
                     fil.mayorQueTmax(mdd.al, numero);
+                      break;
                     case "4":
                     numero = input.nextDouble();
                     System.out.println("Estos son las temperaturas máxima menores");
                     fil.menorQueTmax(mdd.al, numero);
+                      break;
                     case "5":
                     numero = input.nextDouble();
                     System.out.println("Estos son las temperatura máxima iguales");
                     fil.igualTmax(mdd.al, numero);
+                      break;
                 }
-              
+                    break;
+           
+                    
               case "4":
               System.out.println("Ha escogido la temperatura mínima, ahora indique que operación desea realizar en temperatura mínima");
               System.out.println("1. Temperatura mínima mayor");
@@ -136,24 +151,31 @@ public class Main{
               switch(inp){
                     case "1":
                     System.out.println("La temperatura mínima mayor es: "+ est.mayorTmin(mdd.al));
+                      break;
                     case "2":
                     System.out.println("El promedio de temperatura mínima es: "+est.promedioTmin(mdd.al));
+                      break;
                     case "3":
                     double numero = input.nextDouble();
                     System.out.println("Estos son las temperaturas mínima mayores");
                     fil.mayorQueTmin(mdd.al, numero);
+                      break;
                     case "4":
                     numero = input.nextDouble();
                     System.out.println("Estos son las temperaturas mínima menores");
                     fil.menorQueTmin(mdd.al, numero);
+                      break;
                     case "5":
                     numero = input.nextDouble();
                     System.out.println("Estos son las temperaturas mínima iguales");
                     fil.igualTmin(mdd.al, numero);
+                      break;
                 }
+                    break;
                 case "exit":
                 System.exit(0);
             }
+              break;
           }
           catch (Exception e){
               System.out.println("No se pudo encontrar el archivo, por favor vuelva a intentar");

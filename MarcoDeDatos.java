@@ -8,7 +8,7 @@ public class MarcoDeDatos{
     ArrayList<Dato> al = new ArrayList<>();
     /** Este método recibe un archivo como parametro y los datos del archivo los convierte a un mismo dato Dato y los coloca en un ArrayList de tipo Dato */
     public void leerDatos(String nombre)throws Exception {
-        Scanner scan = new Scanner(new File("1715906.csv"));
+        Scanner scan = new Scanner(new File(nombre));
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         // move to next line
         scan.nextLine();
